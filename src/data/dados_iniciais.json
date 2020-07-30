@@ -1,93 +1,53 @@
 {
   "categorias": [
     {
-      "titulo": "Front End",
-      "link": "https://www.alura.com.br/formacao-front-end",
+      "titulo": "Data Science",
+      "link": "https://medium.com/data-hackers/tagged/data-science",
       "cor": "#6BD1FF",
       "link_extra": {
-        "text": "Formação de Front End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-front-end"
+        "text": "Vídeos introdutórios à Data Science",
+        "url": "https://medium.com/data-hackers/tagged/data-science"
       },
       "videos": [
         {
-          "titulo": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
-          "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
-        },
-        {
-          "titulo": "SEO com React",
-          "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
-        },
-        {
-          "titulo": "Componentização com VanillaJS #AluraMais",
-          "url": "https://www.youtube.com/watch?v=LatCKpcOMak"
-        },
-        {
-          "titulo": "Pare de chutar e aprenda a display: inline #01",
-          "url": "https://www.youtube.com/watch?v=5PS6ku8NzIE"
-        },
-        {
-          "titulo": "Template String: Interpolando strings com JavaScript #AluraMais",
-          "url": "https://www.youtube.com/watch?v=ORI_HTXaIw0"
-        },
-        {
-          "titulo": "Qual é a melhor linguagem de programação? #HipstersPontoTube",
-          "url": "https://www.youtube.com/watch?v=Uh-GNH-t89w"
-        },
-        {
-          "titulo": "Novidades do Angular v9",
-          "url": "https://www.youtube.com/watch?v=34uHo7hFmG0"
-        },
-        {
-          "titulo": "Base para aprender os frameworks",
-          "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
-        }        
-      ]
-    },
-    {
-      "titulo": "Back End",
-      "cor": "#00C86F",
-      "link_extra": {
-        "text": "Cursos de Back End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-programacao"
-      },
-      "videos": [
-        {
-          "titulo": "PERCURSO em NÍVEL em ÁRVORE BINÁRIA | Estruturas de Dados #14",
-          "url": "https://www.youtube.com/watch?v=UOK7nS2E9xM"
-        },
-        {
-          "titulo": "Coders4Tips - S01E04: GitHub CLI - Uma Nova Experiência no Github!",
-          "url": "https://www.youtube.com/watch?v=6o6-bKOZOEY"
-        },
-        {
-          "titulo": "Programei 4 robôs que criam vídeos para mim no YouTube",
-          "url": "https://www.youtube.com/watch?v=kjhu1LEmRpY"
-        },
-        {
-          "titulo": "API: Dicionário do Programador",
-          "url": "https://www.youtube.com/watch?v=vGuqKIRWosk"
-        }, 
-        {
-          "titulo": "Usando Git Direito",
-          "url": "https://www.youtube.com/watch?v=6OokP-NE49k"
-        }
-      ]
-    },
-    {
-      "titulo": "Data Science e Inteligência Artificial",
-      "cor": "#9cd33b",
-      "link_extra": {
-        "text": "Cursos de Data Science na Alura",
-        "url": "https://www.alura.com.br/formacao-data-science"
-      },
-      "videos": [
-        {
-          "titulo": "Teste de Turing",
-          "url": "https://www.youtube.com/watch?v=BaPGU4JWa34"
+          "titulo": "Como Aprender Data Science com Python",
+          "url": "https://www.youtube.com/watch?v=C6eKuZ2PVDE&t=10s"
         },
         {
           "titulo": "O que é Data Science?",
           "url": "https://www.youtube.com/watch?v=5b9Z8toVaAU&t=9s"
+        },
+        {
+          "titulo": "#PYRENTENA - Introdução ao Deep Learning",
+          "url": "https://www.youtube.com/watch?v=mcyyuVh50Ys"
+        },
+        {
+          "titulo": "Tutorial de Machine Learning #1 - Quais são os Primeiros Passos e Como Usar o Kaggle?",
+          "url": "https://www.youtube.com/watch?v=1UVizW6eFrY"
+        },
+        {
+          "titulo": "#PYRENTENA - Introdução ao Pandas",
+          "url": "https://www.youtube.com/watch?v=0Sps5yh-lEU"
+        },
+        {
+          "titulo": "Que projetos você deve fazer para colocar no portfolio?",
+          "url": "https://www.youtube.com/watch?v=Xt8q7jsyJCc"
+        },
+        {
+          "titulo": "#PYRENTENA - Introdução às Séries Temporais (Time Series)",
+          "url": "https://www.youtube.com/watch?v=HCT0J5DGgrY&t=3323s"
+        },
+        {
+          "titulo": "Os Segredos Para Construir um Portfólio de Data Science Irresistível",
+          "url": "https://www.youtube.com/watch?v=yGZ6LLEyaV8"
+        },
+        {
+          "titulo": "#PYRENTENA - Introdução à Visualização Gráfica com Matplotlib",
+          "url": "https://www.youtube.com/watch?v=S62mC-nBqf4"
+        },
+        {
+          "titulo": "Teste de Turing",
+          "url": "https://www.youtube.com/watch?v=BaPGU4JWa34"
         },
         {
           "titulo": "Melhor forma de aprender Python",
@@ -96,6 +56,70 @@
         {
           "titulo": "Como ingressar no mercado de Data Science?",
           "url": "https://www.youtube.com/watch?v=gxyjGmOV540"
+        }        
+      ]
+    },
+    {
+      "titulo": "DataViz",
+      "cor": "#00C86F",
+      "link_extra": {
+        "text": "Vídeos introdutórios à visualização de dados",
+        "url": "https://medium.com/@DP6/como-escolher-o-melhor-gr%C3%A1fico-para-meus-dados-dataviz-basics-2-de-4-8554b46d7b5a"
+      },
+      "videos": [
+        {
+          "titulo": "Como sair do ZERO no POWER BI em apenas UMA AULA",
+          "url": "https://www.youtube.com/watch?v=UFGe25gydxo"
+        },
+        {
+          "titulo": "Gráfico de CORRIDA de BARRAS ANIMADO no Power BI",
+          "url": "https://www.youtube.com/watch?v=UbM5SlMIcJo&list=PLxjKFMYkZ9OfDG_LkQ3Txln5BqLZY5iac"
+        },
+        {
+          "titulo": "Tableau Full Course - Learn Tableau in 6 Hours",
+          "url": "https://www.youtube.com/watch?v=aHaOIvR00So"
+        },
+        {
+          "titulo": "GOOGLE DATA STUDIO TUTORIAL PASSO A PASSO INICIANTES",
+          "url": "https://www.youtube.com/watch?v=Gx5S8Ry54TU"
+        }, 
+        {
+          "titulo": "Tableau Dashboard Tips [Top 10 Tableau Dashboard Design Tips]",
+          "url": "https://www.youtube.com/watch?v=Lu0jrymqOGM"
+        }, 
+        {
+          "titulo": "GOOGLE DATA STUDIO: O QUE É E QUANDO USAR",
+          "url": "https://www.youtube.com/watch?v=7heg2vZoZuE"
+        }
+      ]
+    },
+    {
+      "titulo": "Stand-up",
+      "cor": "#9cd33b",
+      "link_extra": {
+        "text": "Especiais dos melhores comediantes brasileiros",
+        "url": "http://www.comedians.com.br/"
+      },
+      "videos": [
+        {
+          "titulo": "Thiago Ventura I Especial Só Agradece",
+          "url": "https://www.youtube.com/watch?v=X-5tCDJ_XDg"
+        },
+        {
+          "titulo": "CAMBOTA - Especial Viver Envelhece - Parte 2",
+          "url": "https://www.youtube.com/watch?v=laE9QrOP94Q"
+        },
+        {
+          "titulo": "AFONSO PADILHA - NÃO TÁ COMPENSANDO SER ADULTO",
+          "url": "https://www.youtube.com/watch?v=QgQw1atlioU&t=1s"
+        },
+        {
+          "titulo": "MÁRCIO DONATO - E OLHA QUE EU TÔ SÓBRIO...",
+          "url": "https://www.youtube.com/watch?v=4J8y2vz7bws"
+        },
+        {
+          "titulo": "DIHH LOPES - COMEDIANTE, CASADO E PAI",
+          "url": "https://www.youtube.com/watch?v=IMTwF3aTOnY"
         }
       ]
     },

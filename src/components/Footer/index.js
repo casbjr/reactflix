@@ -13,6 +13,12 @@ function Footer() {
         <a href="https://www.alura.com.br/">
           Imersão React da Alura
         </a>
+        {' '}
+        por
+        {' '}
+        <a href="https://github.com/casbjr" rel="noopener noreferrer" target="_blank">
+          Carlos Barros
+        </a>
       </p>
     </FooterBase>
   );
