@@ -1,0 +1,16 @@
+{
+    "categorias": [
+        {
+            "id": 1,
+            "nome": "Data Science",
+            "descricao": "Categoria Top",
+            "cor": "cbd1ff"
+        },
+        {
+            "id": 2,
+            "nome": "Data Viz",
+            "descricao": "Outra categoria Top",
+            "cor": "cbd1ff"
+        }
+    ]
+}
