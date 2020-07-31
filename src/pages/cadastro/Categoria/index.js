@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 /* eslint-disable react/no-array-index-key */
 /* eslint-disable linebreak-style */
 import React, { useState, useEffect } from 'react';
