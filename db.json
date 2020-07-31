@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "categorias": [
       {
@@ -189,3 +190,21 @@
       }
     ]
   }
+=======
+{
+    "categorias": [
+        {
+            "id": 1,
+            "nome": "Data Science",
+            "descricao": "Categoria Top",
+            "cor": "cbd1ff"
+        },
+        {
+            "id": 2,
+            "nome": "Data Viz",
+            "descricao": "Outra categoria Top",
+            "cor": "cbd1ff"
+        }
+    ]
+}
+>>>>>>> 10641783f6b431b7a753b1c914d943c7eb690a23
