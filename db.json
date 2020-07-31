@@ -2,29 +2,29 @@
     "categorias": [
       {
         "id": 1,
-        "titulo": "Front End",
+        "titulo": "Data Science",
         "cor": "#6BD1FF",
         "link_extra": {
-          "text": "Formação de Front End na Alura",
-          "url": "https://www.alura.com.br/cursos-online-front-end"
+          "text": "Introdução à Data Science",
+          "url": "https://medium.com/data-hackers/tagged/data-science"
         }
       },
       {
         "id": 2,
-        "titulo": "Back End",
+        "titulo": "DataViz",
         "cor": "#00C86F",
         "link_extra": {
-          "text": "Cursos de Back End na Alura",
-          "url": "https://www.alura.com.br/cursos-online-programacao"
+          "text": "Introdução à visualização de dados",
+          "url": "https://medium.com/@DP6/como-escolher-o-melhor-gr%C3%A1fico-para-meus-dados-dataviz-basics-2-de-4-8554b46d7b5a"
         }
       },
       {
         "id": 3,
-        "titulo": "Data Science e Inteligência Artificial",
+        "titulo": "Stand-up",
         "cor": "#9cd33b",
         "link_extra": {
-          "text": "Cursos de Data Science na Alura",
-          "url": "https://www.alura.com.br/cursos-online-mobile"
+          "text": "Especiais dos melhores comediantes brasileiros",
+          "url": "http://www.comedians.com.br/"
         }
       },
       {
