@@ -92,10 +92,11 @@ function CadastroCategoria() {
           </li>
         ))}
       </ul>
-
-      <Link to="/">
-        Ir para home
-      </Link>
+      <br >
+        <Link to="/">
+          Ir para home
+        </Link>
+      </br>
     </PageDefault>
   );
 }
