@@ -4,7 +4,7 @@ import { FooterBase } from './styles';
 function Footer() {
   return (
     <FooterBase>
-      <a href="https://github.com/casbjr">
+      <a href="https://github.com/casbjr" rel="noopener noreferrer" target="_blank">
         <img src="https://image.flaticon.com/icons/svg/1051/1051275.svg" alt="Logo Github" />
       </a>
       <br />
