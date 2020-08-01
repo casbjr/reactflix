@@ -8,8 +8,7 @@ import CadastroVideo from './pages/cadastro/video';
 import CadastroCategoria from './pages/cadastro/Categoria';
 
 // Desafio master blaster na descrição
-// Colocar um jogo nessa página: https://www.youtube.com/watch?v=jOAU81jdi-c :)
-const Pagina404 = () => (<div>Página 404</div>)
+const Pagina404 = () => (<div>Página 404</div>);
 
 ReactDOM.render(
   <BrowserRouter>
