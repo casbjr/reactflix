@@ -3,6 +3,10 @@
   font-family: 'Roboto', sans-serif;
   }
 
+  .preview-title{
+    text-decoration: none !important;
+  }
+
   :root {
     --primary: #E50914;
     --black: #000000;
@@ -28,4 +32,13 @@
       min-height: calc(100vh - var(--bodyPaddingTop));
       display: flex;
       flex-direction: column;
+    }
+    ::-webkit-scrollbar { 
+      background-color:#111111; 
+      width: 5px;
+    }
+    
+    ::-webkit-scrollbar-thumb { 
+      background-color: var(--primary);
+      border-radius: 25px;
     }

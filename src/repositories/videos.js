@@ -1,7 +1,7 @@
 /* eslint-disable linebreak-style */
 import config from '../config';
 
-const URL_VIDEOS = `${config.URL_BACKEND_TOP}/videos`;
+const URL_VIDEOS = `${config.URL_APP}/videos`;
 
 function create(objetoDoVideo) {
   return fetch(`${URL_VIDEOS}?_embed=videos`, {

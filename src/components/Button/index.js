@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 const Button = styled.button`
-  color: var(--primary);
-  border: 1px solid var(--primary);
-  background: var(--black);
+  color: var(--white);
+  border: 1px solid #666666;
+  background: #666666;
   box-sizing: border-box;
   cursor: pointer;
   padding: 16px 24px;
@@ -11,8 +11,8 @@ const Button = styled.button`
   font-weight: bold;
   font-size: 16px;
   outline: none;
-  border-radius: 5px;
-  text-decoration: none;
+  border-radius: 35px;
+  text-decoration: none !important;
   display: inline-block;
   transition: opacity .3s;
   &:hover,

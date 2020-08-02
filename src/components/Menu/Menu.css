@@ -19,8 +19,8 @@
     right: 0;
     padding-left: 5%;
     padding-right: 5%;
-    background: var(--black);
-    border-bottom: 2px solid var(--primary);
+    background:#111111;
+   
     }
     body {
     --bodyPaddingTop: 94px;

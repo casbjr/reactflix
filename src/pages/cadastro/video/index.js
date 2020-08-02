@@ -1,6 +1,8 @@
 /* eslint-disable linebreak-style */
 import React, { useEffect, useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
 import PageDefault from '../../../components/PageDefault';
 import useForm from '../../../hooks/useForm';
 import FormField from '../../../components/FormField';
@@ -12,7 +14,7 @@ function CadastroVideo() {
   const history = useHistory();
   const [categorias, setCategorias] = useState([]);
   const categoryTitles = categorias.map(({ titulo }) => titulo);
-  const { handleChange, values } = useForm({
+  const { handleChange, values, clearForm  } = useForm({
     titulo: '',
     url: '',
     categoria: '',
@@ -26,67 +28,95 @@ function CadastroVideo() {
       });
   }, []);
 
-  return (
-    <PageDefault>
-      <h1>Cadastro de Video</h1>
 
-      <form onSubmit={(event) => {
-        event.preventDefault();
-        // alert('Video Cadastrado com sucesso!!!1!');
-
-        const categoriaEscolhida = categorias.find((categoria) => {
-          return categoria.titulo === values.categoria;
-        });
-
-        videosRepository.create({
+  function handleSubmit(event) {
+    event.preventDefault()
+    const categoriaEscolhida = categorias.find((categoria) => {
+      return categoria.titulo === values.categoria
+    })
+    try {
+      videosRepository
+        .create({
           titulo: values.titulo,
           url: values.url,
           categoriaId: categoriaEscolhida.id,
         })
-          .then(() => {
-//            console.log('Cadastrou com sucesso!');
-            history.push('/');
+        .then(() => {
+          //history.push('/')
+          clearForm()
+          toast.success('Vídeo cadastrado com sucesso', {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            });
+
+        })
+      } catch (error) {
+        toast.error('Verifique os dados ou cadastre uma nova categoria', {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
           });
-      }}
-      >
+    }
+  }
+
+  return (
+    <PageDefault>
+      <form onSubmit={handleSubmit}>
+        <h1>Novo vídeo</h1>
+
         <FormField
-          label="Título do Vídeo"
+          id="titulo"
+          label="Título do vídeo"
           name="titulo"
+          type="text"
           value={values.titulo}
           onChange={handleChange}
         />
 
         <FormField
-          label="URL"
+          id="url"
+          label="Link do vídeo"
           name="url"
+          type="text"
           value={values.url}
           onChange={handleChange}
         />
 
         <FormField
-          label="Categoria"
+          id="categoria"
+          label="Escolha uma categoria"
           name="categoria"
+          type="text"
           value={values.categoria}
           onChange={handleChange}
           suggestions={categoryTitles}
         />
-
         <Button type="submit">
           Cadastrar
         </Button>
       </form>
-
-      <br />
       <br />
       <Button>
-        <Link to="/cadastro/categoria">
+        <Link to="/cadastro/categoria" style={{ textDecoration: 'none' }}>
           Cadastrar Categoria
         </Link>
       </Button>
       <br />
+
+      <ToastContainer />
       <br />
     </PageDefault>
-  );
+  )
 }
 
 export default CadastroVideo;
+

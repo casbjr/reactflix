@@ -1,10 +1,20 @@
 /* eslint-disable no-console */
 import React, { useEffect, useState } from 'react';
+import BeatLoader from 'react-spinners/BeatLoader';
+import styled from 'styled-components';
 // import dadosIniciais from '../../data/dados_iniciais.json';
 import BannerMain from '../../components/BannerMain';
 import Carousel from '../../components/Carousel';
 import PageDefault from '../../components/PageDefault';
 import categoriasRepository from '../../repositories/categorias';
+
+const Div = styled.div`
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 50vh;
+  align-items: center;
+`
 
 function Home() {
   const [dadosIniciais, setDadosIniciais] = useState([]);
@@ -23,7 +33,11 @@ function Home() {
 
   return (
     <PageDefault paddingAll={0}>
-      {dadosIniciais.length === 0 && (<div>Loading...</div>)}
+      {dadosIniciais.length === 0 && (
+        <Div>
+          <BeatLoader size={50} color={'#DC1A28'} />
+        </Div>
+      )}
 
       {dadosIniciais.map((categoria, indice) => {
         if (indice === 0) {
@@ -50,27 +64,6 @@ function Home() {
         );
       })}
 
-      {/* <BannerMain
-        videoTitle={dadosIniciais.categorias[0].videos[0].titulo}
-        url={dadosIniciais.categorias[0].videos[0].url}
-        videoDescription="O que"
-      />
-      <Carousel
-        ignoreFirstVideo
-        category={dadosIniciais.categorias[0]}
-      />
-      <Carousel
-        category={dadosIniciais.categorias[1]}
-      />
-      <Carousel
-        category={dadosIniciais.categorias[2]}
-      />
-      <Carousel
-        category={dadosIniciais.categorias[3]}
-      />
-      <Carousel
-        category={dadosIniciais.categorias[4]}
-      /> */}
     </PageDefault>
   );
 }
